@@ -16,6 +16,26 @@
     body {
       font-family: "Manrope", sans-serif;
     }
+
+    @media (max-width:768px) {
+      .footer {
+        display: grid;
+  gap: 20px;
+  height: 100vh;
+
+  grid-template-areas: 
+    "A A A A   A A A A"
+    "B B B B   C C C C"
+    "D D D D   D D D D";;
+      }
+
+      .first{
+        grid-area: A;
+      }
+      .second{grid-area: B}
+      .third{grid-area: C}
+      .fourth{grid-area: D}
+    }
   </style>
 </head>
 
@@ -75,49 +95,48 @@
       <div id="slide2"
         class="carousel-item relative w-full h-[60vh] bg-[url(./Images/2.png)] bg-no-repeat bg-center bg-cover rounded-2xl">
         <div class="absolute flex gap-4 transform -translate-y-1/2 lg:left-10 bottom-10 left-1/3">
-            <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❮</a>
-            <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❯</a>
-          </div>
+          <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❮</a>
+          <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❯</a>
+        </div>
         <!-- slide-2 finished -->
       </div>
     </div>
     <div class="flex flex-col justify-end">
-      <div class="bg-[#131318] h-fit p-8 rounded-2xl m-8 lg:w-[40vh] mx-auto lg:-translate-y-60 lg:translate-x-96">
-        <h3 class="text-white text-2xl">Meet all the heroes from the field</h3>
-        <p class="text-white text-0.75xl pt-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-          turpis placerat dolor. Purus urna in sit nullam proin.
+      <div class="bg-[#131318] h-fit p-8 rounded-2xl m-2 lg:w-[40vh] mx-auto lg:-translate-y-60 lg:translate-x-96">
+        <h3 class="text-white lg:text-xl font-extrabold">Meet all the heroes from the field</h3>
+        <p class="text-gray-400 pt-4">When you think of ice hockey heroes, who do you think of? Sidney Crosby?
         </p>
       </div>
     </div>
   </div>
   <main>
     <!-- professional hockey club -->
-    <section class="container mx-auto my-6 lg:my-12 lg:px-24 px-8">
+    <section class="container mx-auto lg:my-12 lg:px-24 px-8">
       <div class="text-center border-dotted border-2 border-gray-200 py-8">
         <h2 class="text-4xl font-extrabold py-6">Professional Hockeys Club</h2>
-        <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit
-          nullam proin. </p>
+        <p>The National Hockey League is a professional ice hockey league in North<br> America comprising 32 teams—25 in
+          the United States and 7 in Canada.</p>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-4 my-12 lg:gap-8 lg:space-y-0 space-y-10">
         <div class="flex flex-col items-center text-center space-y-5">
           <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
-          <h3>Prayer Facility</h3>
-          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <h3 class="lg:text-2xl font-extrabold">Prayer Facility</h3>
+          <p class="text-gray-400">a dedicated space where people can go to pray and seek God.</p>
         </div>
         <div class="flex flex-col items-center text-center space-y-5">
           <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
-          <h3>Prayer Facility</h3>
-          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <h3 class="lg:text-2xl font-extrabold">Experienced Coach</h3>
+          <p class="text-gray-400">experienced Hockey Coach having B.P. Ed. Degree for our school</p>
         </div>
         <div class="flex flex-col items-center text-center space-y-5">
           <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar">90%</div>
-          <h3>Prayer Facility</h3>
-          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <h3 class="lg:text-2xl font-extrabold">Senior Player</h3>
+          <p class="text-gray-400">There are no age restrictions for Senior players.</p>
         </div>
         <div class="flex flex-col items-center text-center space-y-5">
           <div class="radial-progress text-blue-400" style="--value:80;" role="progressbar">80%</div>
-          <h3>Prayer Facility</h3>
-          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <h3 class="lg:text-2xl font-extrabold">Training Ground</h3>
+          <p class="text-gray-400"> players to increase explosiveness on the ice.</p>
         </div>
       </div>
     </section>
@@ -126,8 +145,8 @@
       <div class="text-center border-y-2 border-dashed py-8 space-y-6">
         <h2 class="text-4xl font-extrabold">Program Sections</h2>
         <p class="text-[#13131899]">
-          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam
-          proin.
+          The National Coach Certification Program trains, certifies and supports Canada's dedicated hockey coaches so
+          they have all the tools they need to help players
         </p>
       </div>
       <div>
@@ -135,8 +154,8 @@
           <div class="bg-[url('./Images/2.png')] w-full bg-no-repeat bg-center bg-cover rounded-lg">
             <div class="space-y-6 py-20 px-8">
               <h3 class="text-white lg:text-3xl text-2xl font-extrabold">Junior Program</h3>
-              <p class="text-white w-2/3">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
-                sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+              <p class="text-white w-2/3">Currently, USA Hockey oversees three junior leagues, including the United
+                States Hockey League (USHL) North American Hockey League (NAHL).
               </p>
               <button class="btn btn-error text-white">Get Ticket</button>
             </div>
@@ -144,10 +163,9 @@
           <div>
             <div class="bg-[url(./Images/3.png)] bg-no-repeat bg-center bg-cover object-cover rounded-lg">
               <div class="space-y-6 py-20 px-8">
-                <h3 class="text-white lg:text-3xl text-2xl font-extrabold">Junior Program</h3>
-                <p class="text-white w-2/3">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                  enim
-                  sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+                <h3 class="text-white lg:text-3xl text-2xl font-extrabold">Teenager Program</h3>
+                <p class="text-white w-2/3">The Hockey U Teen program is designed to prepare players for the rigors of
+                  recreational hockey. Coaches will work with players to develop their hockey skills
                 </p>
                 <button class="btn btn-error text-white">Get Ticket</button>
               </div>
@@ -155,11 +173,12 @@
           </div>
         </div>
         <div class="grid grid-cols-1">
-          <div class="bg-[url(./Images/4.png)] col-span-2 w-full bg-no-repeat bg-center bg-cover rounded-lg h-[60vh] relative">
+          <div
+            class="bg-[url(./Images/4.png)] col-span-2 w-full bg-no-repeat bg-center bg-cover rounded-lg h-[60vh] relative">
             <div class="space-y-6 px-8 absolute lg:bottom-20 lg:left-10">
-              <h3 class="text-white lg:text-3xl text-2xl font-extrabold pt-5">Junior Program</h3>
-              <p class="text-white w-2/3">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
-                sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla.
+              <h3 class="text-white lg:text-3xl text-2xl font-extrabold pt-5">Professional Program</h3>
+              <p class="text-white w-2/3">The Hockey Hut is a leader when it comes to professional skills development
+                for ice hockey players all around the Capital Region.
               </p>
               <button class="btn btn-error text-white px-10 text-2xl">Register Now!</button>
             </div>
@@ -171,8 +190,8 @@
     <section class="container mx-auto my-6 lg:my-12 lg:px-24 px-8">
       <div class="space-y-6 text-center border-y-2 border-dashed py-8 my-12">
         <h1 class="text-4xl font-extrabold">Our New Products</h1>
-        <p class="text-[#13131899]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
-          <br> dolor. Purus urna in sit nullam proin.
+        <p class="text-[#13131899]">Keep tabs on the newest product releases from all of the top hockey brands! Learn
+          about the latest gear
         </p>
       </div>
       <!-- hero -->
@@ -199,17 +218,15 @@
               </div>
               <!-- card-icons ends-->
               <div>
-                <h2 class="card-title text-2xl font-extrabold">World Cup Flags Football</h2>
-                <p class="text-base text-[rgba(19, 19, 24, 0.60)]">Dolor sit amet consectetur. Ut urna diam quis
-                  sagittis.
+                <h2 class="card-title text-2xl font-extrabold">Hockey Jackets</h2>
+                <p class="text-base text-[rgba(19, 19, 24, 0.60)]">Hockey jackets and vests are made from durable
+                  materials.
                 </p>
               </div>
               <div class="flex justify-evenly">
-                <p class="text-red-500 font-extrabold">Price - $22.00</p>
-                
-                  <img class="mx-2" src="Images/cart.png" alt="">
-                  <span>Delivery Fee : Free</span>
-                
+                <p class="text-red-500 lg:text-xl font-extrabold">Price - $28.00</p>
+                <img class="mx-2" src="Images/cart.png" alt="">
+                <span>Delivery Fee : Free</span>
               </div>
             </div>
           </div>
@@ -234,17 +251,17 @@
               </div>
               <!-- card-icons ends-->
               <div>
-                <h2 class="card-title text-2xl font-extrabold">World Cup Flags Football</h2>
-                <p class="text-base text-[rgba(19, 19, 24, 0.60)]">Dolor sit amet consectetur. Ut urna diam quis
-                  sagittis.
+                <h2 class="card-title text-2xl font-extrabold">Field Hockey Balls</h2>
+                <p class="text-base text-[rgba(19, 19, 24, 0.60)]">Improve hockey matches and hockey training by
+                  purchasing hockey balls
                 </p>
               </div>
               <div class="flex justify-evenly">
-                <p class="text-xl text-red-500 font-extrabold">Price - $22.00</p>
-                <div class="flex">
-                  <img src="Images/cart.png" alt="">
-                  <p>Delivery Fee : Free</p>
-                </div>
+                <p class="lg:text-xl text-red-500 font-extrabold">Price - $32.00</p>
+
+                <img class="mx-2" src="Images/cart.png" alt="">
+                <p>Delivery Fee : Free</p>
+
               </div>
             </div>
           </div>
@@ -271,17 +288,16 @@
               </div>
               <!-- card-icons ends-->
               <div>
-                <h2 class="card-title text-2xl font-extrabold">World Cup Flags Football</h2>
-                <p class="text-base text-[rgba(19, 19, 24, 0.60)]">Dolor sit amet consectetur. Ut urna diam quis
-                  sagittis.
+                <h2 class="card-title text-2xl font-extrabold">Hockey Hats & Caps</h2>
+                <p class="text-base text-[rgba(19, 19, 24, 0.60)]">Shop HockeyMonkey's selection of hockey hats!
                 </p>
               </div>
               <div class="flex justify-evenly">
-                <p class="text-xl text-red-500 font-extrabold">Price - $22.00</p>
-                <div class="flex">
-                  <img src="Images/cart.png" alt="">
-                  <p>Delivery Fee : Free</p>
-                </div>
+                <p class="lg:text-xl text-red-500 font-extrabold">Price - $12.00</p>
+
+                <img class="mx-2" src="Images/cart.png" alt="">
+                <p>Delivery Fee : Free</p>
+
               </div>
             </div>
           </div>
@@ -306,17 +322,17 @@
               </div>
               <!-- card-icons ends-->
               <div>
-                <h2 class="card-title text-2xl font-extrabold">World Cup Flags Football</h2>
-                <p class="text-base text-[rgba(19, 19, 24, 0.60)]">Dolor sit amet consectetur. Ut urna diam quis
-                  sagittis.
+                <h2 class="card-title text-2xl font-extrabold">Hockey Jersey</h2>
+                <p class="text-base text-[rgba(19, 19, 24, 0.60)]">The best deals and discounts on Hockey Jerseys are
+                  here
                 </p>
               </div>
               <div class="flex justify-evenly">
-                <p class="text-xl text-red-500 font-extrabold">Price - $22.00</p>
-                <div class="flex">
-                  <img src="Images/cart.png" alt="">
-                  <p>Delivery Fee : Free</p>
-                </div>
+                <p class="lg:text-xl text-red-500 font-extrabold">Price - $22.00</p>
+
+                <img class="mx-2" src="Images/cart.png" alt="">
+                <p>Delivery Fee : Free</p>
+
               </div>
             </div>
           </div>
@@ -343,17 +359,17 @@
               </div>
               <!-- card-icons ends-->
               <div>
-                <h2 class="card-title text-2xl font-extrabold">World Cup Flags Football</h2>
-                <p class="text-base text-[rgba(19, 19, 24, 0.60)]">Dolor sit amet consectetur. Ut urna diam quis
-                  sagittis.
+                <h2 class="card-title text-2xl font-extrabold">Hockey helmets</h2>
+                <p class="text-base text-[rgba(19, 19, 24, 0.60)]">Shop hockey helmets and enjoy the guaranteed lowest
+                  prices
                 </p>
               </div>
               <div class="flex justify-evenly">
-                <p class="text-xl text-red-500 font-extrabold">Price - $22.00</p>
-                <div class="flex">
-                  <img src="Images/cart.png" alt="">
-                  <p>Delivery Fee : Free</p>
-                </div>
+                <p class="lg:text-xl text-red-500 font-extrabold">Price - $42.00</p>
+
+                <img class="mx-2" src="Images/cart.png" alt="">
+                <p>Delivery Fee : Free</p>
+
               </div>
             </div>
           </div>
@@ -379,16 +395,16 @@
               <!-- card-icons ends-->
               <div>
                 <h2 class="card-title text-2xl font-extrabold">World Cup Flags Football</h2>
-                <p class="text-base text-[rgba(19, 19, 24, 0.60)]">Dolor sit amet consectetur. Ut urna diam quis
-                  sagittis.
+                <p class="text-base text-[rgba(19, 19, 24, 0.60)]">Shop for premium football of all sizes online in our
+                  website
                 </p>
               </div>
               <div class="flex justify-evenly">
-                <p class="text-xl text-red-500 font-extrabold">Price - $22.00</p>
-                <div class="flex">
-                  <img src="Images/cart.png" alt="">
-                  <p>Delivery Fee : Free</p>
-                </div>
+                <p class="lg:text-xl text-red-500 font-extrabold">Price - $22.00</p>
+
+                <img class="mx-2" src="Images/cart.png" alt="">
+                <p>Delivery Fee : Free</p>
+
               </div>
             </div>
           </div>
@@ -399,8 +415,8 @@
     <section class="container mx-auto my-6 lg:my-12 lg:px-24 px-8">
       <div class="space-y-6 text-center border-y-2 border-dashed py-8 my-12">
         <h1 class="text-center text-4xl font-extrabold border-y-2 border-dashed py-8 space-y-6">Clients Question</h1>
-        <p class="text-black">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
-          <br> dolor. Purus urna in sit nullam proin.
+        <p class="text-black">Clients has lots of questions from hockey kits from time to time regarding various
+          equipment issues
         </p>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 border-2 rounded-lg p-8">
@@ -414,7 +430,7 @@
               Our Equipment
             </div>
             <div class="collapse-content">
-              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+              <p>you will find out quickly buying hockey equipment is unfortunately not a one time expense.</p>
             </div>
           </div>
           <div class="collapse collapse-plus border-b-2 p-1">
@@ -469,8 +485,7 @@
     <section class="container mx-auto my-6 lg:my-12 lg:px-24 px-8">
       <div class="space-y-6 text-center border-y-2 border-dashed py-8 my-12">
         <h1 class="text-center text-4xl font-extrabold space-y-6">Get In Touch</h1>
-        <p class="text-black text-xl">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
-          <br> dolor. Purus urna in sit nullam proin.
+        <p class="text-black">Get in touch with the wonderful shop for more sports equipment.
         </p>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3">
@@ -478,26 +493,26 @@
           <div class="w-96 bg-[#bced6d1a] space-y-6 px-8 py-12 rounded-lg">
             <img src="Images/phone.png" alt="">
             <p>Phone Number : </p>
-            <p>(+62) 123-321-543</p>
+            <p class="font-extrabold">(+62) 123-321-543</p>
           </div>
           <div class="w-96 bg-[#fddd5f1a] space-y-6 px-8 py-12 rounded-lg">
-            <img src="Images/phone.png" alt="">
+            <img src="Images/Group 1171275321.png" alt="">
             <p>Phone Number : </p>
-            <p>(+62) 123-321-543</p>
+            <p class="font-extrabold">(+62) 123-321-543</p>
           </div>
           <div class="w-96 bg-[#629cf31a] space-y-6 px-8 py-12 rounded-lg">
-            <img src="Images/phone.png" alt="">
+            <img src="Images/google-maps.png" alt="">
             <p>Phone Number : </p>
-            <p>(+62) 123-321-543</p>
+            <p class="font-extrabold">(+62) 123-321-543</p>
           </div>
         </div>
         <div class="col-span-2">
           <div class="lg:flex flex:col justify-evenly">
-            <form class="text-2xl font-bold p-4">Your Email <br>
+            <form class="text-2xl font-bold p-4">Enter Your Name: <br>
               <input class="w-96 bg-[#13131808] rounded-lg p-5 text-base font-light my-6" type="text"
                 placeholder="Enter your full name">
             </form>
-            <form class="text-2xl font-bold p-4">Subject <br>
+            <form class="text-2xl font-bold p-4">Enter Your e-mail: <br>
               <input class="w-96 bg-[#13131808] rounded-lg p-5 text-base font-light my-6" type="text"
                 placeholder="Enter your full name">
             </form>
@@ -513,10 +528,10 @@
             </form>
 
           </div>
-          <div class="px-4 lg:px-20 space-y-5">
+          <div class="px-4 lg:px-10 space-y-5">
             <p class="text-2xl font-bold p-4">Message</p>
             <textarea class="textarea textarea-bordered h-96 w-full bg-[#13131808] border-0 rounded-lg mx-auto"
-              placeholder="Bio"></textarea>
+              placeholder="Write your message"></textarea>
             <button class="btn btn-error w-full text-white font-extrabold py-3">Send messages</button>
           </div>
         </div>
@@ -531,13 +546,62 @@
       </div>
     </section>
   </main>
+  <footer class="p-10 bg-black text-white grid grid-cols-1 items-center ">
+    <div class="footer p-10 justify-around h-full">
+      <div class="first lg:space-y-5 space-y-2">
+        <aside>
+          <p class="lg:text-3xl text-xl font-extrabold">Get In Touch</p>
+          <p class="pt-4">Get in touch with the wonderful <br>shop for more sports equipment.</p>
+        </aside>
+        <div class="flex gap-4">
+          <img src="Images/mail Frame.png" alt="">
+          <p>hockeys@support.com</p>
+        </div>
+        <div class="flex gap-4">
+          <img src="Images/call Frame.png" alt="">
+          <p>(+62) 123-321-543</p>
+        </div>
+      </div>
+      <div class="second">
+        <ul class="lg:space-y-5 space-y-2">
+          <header class="text-2xl text-white font-extrabold">Company
+          </header>
+          <li><a class="link link-hover">About us</a></li>
+          <li><a class="link link-hover">Leadership</a></li>
+          <li><a class="link link-hover">Careers</a></li>
+          <li><a class="link link-hover">News & Article</a></li>
+          <li><a class="link link-hover">Legal Notice</a></li>
+        </ul>
+      </div>
+      <div class="third">
+        <ul class="lg:space-y-5 space-y-2">
+          <header class="text-2xl text-white font-extrabold">Support</header>
+          <li><a class="link link-hover">Help Center</a></li>
+          <li><a class="link link-hover">FAQ</a></li>
+          <li><a class="link link-hover">Ticket Support</a></li>
+          <li><a class="link link-hover">Contact Us</a></li>
+          
+        </ul>
+      </div>
+      <div class="fourth">
+        <ul class="lg:space-y-5 space-y-2">
+          <header class="text-2xl text-white font-extrabold">Services</header>
+          <li><a class="link link-hover">Academy</a></li>
+          <li><a class="link link-hover">Group Lesson</a></li>
+          <li><a class="link link-hover">Private Lesson</a></li>
+          <li><a class="link link-hover">Hockeys for kids</a></li>
+          <li><a class="link link-hover">Hockeys for Adult</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <!-- footer section -->
-  <footer class=" footer flex justify-center bg-black">
+  <!-- <footer class=" footer flex justify-center bg-black">
     <div class="grid grid-cols-1 lg:grid-cols-4 space-x-24 justify-center p-10  text-base-content text-white">
 
       <div class="space-y-5">
         <p class="text-3xl font-extrabold">Get In Touch</p>
-        <p>Dit amet consectetur. Condimentum <br>adipiscing aliquam turpis placerat dolor. Purus urna <br>brin sit
+        <p>Do you have a highly organized, resilient, communicative and customer service driven nature and thrive in a fast paced environment?
           nullam
           proin. </p>
         <div class="flex gap-4">
@@ -572,7 +636,7 @@
         <a class="link link-hover">Hockeys for Adult</a>
       </nav>
     </div>
-  </footer>
+  </footer> -->
 </body>
 
 </html>
